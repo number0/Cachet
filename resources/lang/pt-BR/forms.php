@@ -23,6 +23,11 @@ return [
         'enable_google2fa' => 'Habilitar a autenticação de dois fatores do Google',
         'cache_driver'     => 'Driver de Cache',
         'session_driver'   => 'Driver de Sessão',
+        'mail_driver'      => 'Driver de correio',
+        'mail_host'        => 'Host de correio',
+        'mail_address'     => 'Correio do endereço',
+        'mail_username'    => 'Nome de usuário de email',
+        'mail_password'    => 'Senha de email',
     ],
 
     // Login form fields
@@ -34,7 +39,7 @@ return [
         'invalid'       => 'Nome de usuário ou senha incorretos',
         'invalid-token' => 'Token inválido',
         'cookies'       => 'Você deve habilitar os cookies do navegador para logar.',
-        'rate-limit'    => 'Rate limit exceeded.',
+        'rate-limit'    => 'Limite de acesso excedido.',
     ],
 
     // Incidents form fields
@@ -44,9 +49,9 @@ return [
         'component'          => 'Componente',
         'message'            => 'Mensagem',
         'message-help'       => 'Você também pode usar o Markdown.',
-        'scheduled_at'       => 'Agendar a manutenção para quando?',
-        'incident_time'      => 'Quando esse incidente ocorreu?',
-        'notify_subscribers' => 'Notificar os inscritos?',
+        'scheduled_at'       => 'When to schedule the maintenance for?',
+        'incident_time'      => 'When did this incident occur?',
+        'notify_subscribers' => 'Notificar os assinantes?',
         'visibility'         => 'Visibilidade do incidente',
         'public'             => 'Visível para todos',
         'logged_in_only'     => 'Visível somente para usuários logados',
@@ -70,7 +75,7 @@ return [
 
         'groups' => [
             'name'               => 'Nome',
-            'collapsing'         => 'Escolha a visibilidade do grupo',
+            'collapsing'         => 'Choose visibility of the group',
             'visible'            => 'Sempre expandido',
             'collapsed'          => 'Colapsar o grupo por padrão',
             'collapsed_incident' => 'Colapsar o grupo, mas expandir se ocorrer algum problema',
@@ -118,10 +123,10 @@ return [
             'analytics_piwik_siteid' => 'Id do site no Piwik',
         ],
         'localization' => [
-            'site-timezone'          => 'Fuso horário do site',
-            'site-locale'            => 'Idioma do site',
-            'date-format'            => 'Formato da data',
-            'incident-date-format'   => 'Formato de Hora do Incidente',
+            'site-timezone'        => 'Fuso horário do site',
+            'site-locale'          => 'Idioma do site',
+            'date-format'          => 'Formato da data',
+            'incident-date-format' => 'Formato de Hora do Incidente',
         ],
         'security' => [
             'allowed-domains'      => 'Domínios permitidos',
@@ -131,12 +136,12 @@ return [
             'custom-css' => 'Folha de estilos personalizada',
         ],
         'theme' => [
-            'background-color'        => 'Cor de fundo',
+            'background-color'        => 'Background Color',
             'background-fills'        => 'Preenchimento de Fundo (Componentes, Incidentes, Rodapé)',
             'banner-background-color' => 'Cor de Fundo do banner',
             'banner-padding'          => 'Margem interna',
             'fullwidth-banner'        => 'Habilitar largura completa do banner?',
-            'text-color'              => 'Cor do Texto',
+            'text-color'              => 'Text Color',
             'dashboard-login'         => 'Mostrar botão para painel no rodapé?',
             'reds'                    => 'Vermelho (Usado para erros)',
             'blues'                   => 'Azul (usado para informações)',

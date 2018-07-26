@@ -14,7 +14,7 @@ return [
     // Setup form fields
     'setup' => [
         'email'            => 'E-post',
-        'username'         => 'Användarnamn',
+        'username'         => 'Username',
         'password'         => 'Lösenord',
         'site_name'        => 'Webbplatsens namn',
         'site_domain'      => 'Webbplatsens domän',
@@ -23,13 +23,18 @@ return [
         'enable_google2fa' => 'Aktivera Google tvåfaktorsautentisering',
         'cache_driver'     => 'Cachedrivrutin',
         'session_driver'   => 'Sessionsdrivrutin',
+        'mail_driver'      => 'Mail Driver',
+        'mail_host'        => 'Mail Host',
+        'mail_address'     => 'Mail From Address',
+        'mail_username'    => 'Mail Username',
+        'mail_password'    => 'Mail Password',
     ],
 
     // Login form fields
     'login' => [
         'login'         => 'Användarnamn eller e-postadress',
-        'email'         => 'E-post',
-        'password'      => 'Lösenord',
+        'email'         => 'Email',
+        'password'      => 'Password',
         '2fauth'        => 'Autentiseringskod',
         'invalid'       => 'Ogiltigt användarnamn eller lösenord',
         'invalid-token' => 'Ogiltig nyckel',
@@ -44,8 +49,8 @@ return [
         'component'          => 'Komponent',
         'message'            => 'Meddelande',
         'message-help'       => 'Du kan även använda Markdown.',
-        'scheduled_at'       => 'När vill du schemalägga underhållet?',
-        'incident_time'      => 'När inträffade händelsen?',
+        'scheduled_at'       => 'When to schedule the maintenance for?',
+        'incident_time'      => 'When did this incident occur?',
         'notify_subscribers' => 'Meddela prenumeranter?',
         'visibility'         => 'Incident Visibility',
         'public'             => 'Kan ses av allmänheten',
@@ -118,10 +123,10 @@ return [
             'analytics_piwik_siteid' => 'Piwik\'s sajt-id',
         ],
         'localization' => [
-            'site-timezone'          => 'Webbplatsens tidszon',
-            'site-locale'            => 'Webbplatsspråk',
-            'date-format'            => 'Datumformat',
-            'incident-date-format'   => 'Händelsens tidsstämpelformat',
+            'site-timezone'        => 'Webbplatsens tidszon',
+            'site-locale'          => 'Webbplatsspråk',
+            'date-format'          => 'Datumformat',
+            'incident-date-format' => 'Händelsens tidsstämpelformat',
         ],
         'security' => [
             'allowed-domains'      => 'Tillåtna domäner',

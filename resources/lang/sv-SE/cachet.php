@@ -28,12 +28,12 @@ return [
     'incidents' => [
         'none'          => 'Inga händelser har rapporterats',
         'past'          => 'Tidigare händelser',
-        'previous_week' => 'Förra veckan',
-        'next_week'     => 'Nästa vecka',
+        'previous_week' => 'Previous Week',
+        'next_week'     => 'Next Week',
         'scheduled'     => 'Planerat underhåll',
         'scheduled_at'  => ', schemalagda: tidsstämpel',
         'status'        => [
-            0 => 'Schemalagd', // TODO: Hopefully remove this.
+            0 => 'Scheduled', // TODO: Hopefully remove this.
             1 => 'Undersöker',
             2 => 'Identifierat',
             3 => 'Bevakar',
@@ -44,8 +44,8 @@ return [
     // Service Status
     'service' => [
         'good'  => '[0,1] Systemet fungerar |[2,Inf] Alla system fungerar',
-        'bad'   => '[0,1] Systemet har för närvarande problem|[2,Inf] Vissa system har problem',
-        'major' => '[0,1] Stora störningar på tjänsten [2,Inf] Stora störningar på vissa system',
+        'bad'   => '[0,1] The system is currently experiencing issues|[2,Inf] Some systems are experiencing issues',
+        'major' => '[0,1] The service experiencing a major outage|[2,Inf] Some systems are experiencing a major outage',
     ],
 
     'api' => [
@@ -65,7 +65,7 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe' => 'Prenumerera för att få de senaste uppdateringarna',
+        'subscribe' => 'Subscribe to get the most recent updates',
         'button'    => 'Prenumerera',
         'manage'    => [
             'no_subscriptions' => 'You\'re currently subscribed to all updates.',
@@ -103,8 +103,8 @@ return [
     'users' => [
         'email' => [
             'invite' => [
-                'text'           => "Du har blivit inbjuden till teamet för :app_names statussida, registrera dig genom att trycka på länken.\n:link\nTack, :app_name",
-                'html'           => '<p>Du har blivit inbjuden till teamet :app_names statussida. Registrera dig genom att trycka på <a href=":link"> den här länken</a></p> <p>Tack, :app_name</p>',
+                'text' => "Du har blivit inbjuden till teamet för :app_names statussida, registrera dig genom att trycka på länken.\n:link\nTack, :app_name",
+                'html' => '<p>Du har blivit inbjuden till teamet :app_names statussida. Registrera dig genom att trycka på <a href=":link"> den här länken</a></p> <p>Tack, :app_name</p>',
             ],
         ],
     ],

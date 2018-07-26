@@ -28,12 +28,12 @@ return [
     'incidents' => [
         'none'          => 'Nenhum incidente reportado',
         'past'          => 'Incidentes anteriores',
-        'previous_week' => 'Semana anterior',
-        'next_week'     => 'Próxima semana',
+        'previous_week' => 'Previous Week',
+        'next_week'     => 'Next Week',
         'scheduled'     => 'Manutenção Agendada',
         'scheduled_at'  => ', agendada :timestamp',
         'status'        => [
-            0 => 'Agendado', // TODO: Hopefully remove this.
+            0 => 'Scheduled', // TODO: Hopefully remove this.
             1 => 'Investigando',
             2 => 'Identificado',
             3 => 'Observando',
@@ -44,8 +44,8 @@ return [
     // Service Status
     'service' => [
         'good'  => '[0,1] Sistema operacional|[2,Inf] Todos os sistemas estão operacionais',
-        'bad'   => '[0,1] O sistema encontra-se com alguns problemas|[2,Inf] Alguns sistemas estão com problemas',
-        'major' => '[0,1] O serviço encontra-se com uma falha geral.|[2,Inf] Alguns sistemas encontram-se com falhas gerais',
+        'bad'   => '[0,1] The system is currently experiencing issues|[2,Inf] Some systems are experiencing issues',
+        'major' => '[0,1] The service experiencing a major outage|[2,Inf] Some systems are experiencing a major outage',
     ],
 
     'api' => [
@@ -65,7 +65,7 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe' => 'Inscreva-se para obter as atualizações mais recentes',
+        'subscribe' => 'Subscribe to get the most recent updates',
         'button'    => 'Inscreva-se',
         'manage'    => [
             'no_subscriptions' => 'Você está atualmente inscrito a todas as atualizações.',
@@ -75,21 +75,21 @@ return [
             'subscribe'          => 'Inscreva-se para atualizações via e-mail.',
             'subscribed'         => 'Inscrição realizada com sucesso! Por favor verifique o e-mail que enviamos à você para confirmar sua inscrição.',
             'verified'           => 'Sua inscrição foi confirmada! Obrigado!',
-            'manage'             => 'Manage your subscription',
+            'manage'             => 'Gerencie sua assinatura',
             'unsubscribe'        => 'Não desejo mais receber notificações via e-mail.',
             'unsubscribed'       => 'Sua inscrição foi cancelada.',
             'failure'            => 'Ocorreu um problema na sua inscrição.',
             'already-subscribed' => 'Impossível inscrever :email pois já se encontra inscrito.',
             'verify'             => [
-                'text'   => "Please confirm your email subscription to :app_name status updates.\n:link",
-                'html'   => '<p>Please confirm your email subscription to :app_name status updates.</p>',
-                'button' => 'Confirm Subscription',
+                'text'   => "Por favor, confirme sua assinatura de e-mail para receber atualizações de status de :app_name. \n:link",
+                'html'   => '<p>Por favor, confirme sua assinatura de e-mail para receber atualizações de status de :app_name.</p>',
+                'button' => 'Confirmar inscrição',
             ],
             'maintenance' => [
-                'subject' => '[Maintenance Scheduled] :name',
+                'subject' => '[Manutenção Programada] :name',
             ],
             'incident' => [
-                'subject' => '[New Incident] :status: :name',
+                'subject' => '[Novo incidente] :status: :name',
             ],
             'component' => [
                 'subject'       => 'Atualização do Estado do Componente',
@@ -103,8 +103,8 @@ return [
     'users' => [
         'email' => [
             'invite' => [
-                'text'           => "Você foi convidado para a página de status da equipe :app_name, para se inscrever siga o próximo link.\n:link\nObrigado,: app_name",
-                'html'           => '<p>Você foi convidado para a página de status da equipe :app_name, para se inscrever siga o seguinte link.</p> <p><a href=":link">:link</a></p> <p>Obrigado, :app_name</p>',
+                'text' => "Você foi convidado para a página de status da equipe :app_name, para se inscrever siga o próximo link.\n:link\nObrigado,: app_name",
+                'html' => '<p>Você foi convidado para a página de status da equipe :app_name, para se inscrever siga o seguinte link.</p> <p><a href=":link">:link</a></p> <p>Obrigado, :app_name</p>',
             ],
         ],
     ],
